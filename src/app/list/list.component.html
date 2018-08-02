@@ -1,0 +1,12 @@
+<div *ngIf='list.length !== 0'>
+  <ul>
+    <li 
+      *ngFor='let todo of list'
+      (click)="flagReverse(todo.id)"
+      [ngClass] = "{'done':todo.isDone === true}"
+    >
+      <span>{{todo.text}}</span>
+      <button (click)="delItem(todo.id)">delete</button>
+    </li>
+  </ul>
+</div>
