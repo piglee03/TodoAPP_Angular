@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {UpdateListService} from './update-list.service';
+import { UpdateListService } from './update-list.service';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +11,9 @@ export class AppComponent {
   id = 3;
   constructor(private updateListService: UpdateListService) {}
 
-  update(text:string):void {
-    if(text !== "") {
-      this.updateListService.addItem(this.id++,text);
+  update(text: string): void {
+    if (text !== '') {
+      this.updateListService.addItem(this.id++, text);
     }
   }
 }

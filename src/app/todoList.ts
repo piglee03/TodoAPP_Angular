@@ -1,4 +1,4 @@
-import {Todo} from './todo';
+import { Todo } from './todo';
 
-export var LIST: Todo[] = [
-]
+export let LIST: Todo[] = [
+];
