@@ -1,3 +1,6 @@
+// 필요 없어진 파일
+
+
 import { Injectable } from '@angular/core';
 // import { Observable, of } from 'rxjs';
 import { Todo } from './todo';
@@ -12,7 +15,7 @@ export class UpdateListService {
   }
 
   addItem(id: number, text: string): void {
-    LIST.push({id: id, text: text, isDone: false});
+    // LIST.push({id: id, text: text, isDone: false});
   }
 
   delItem(id: number): void {

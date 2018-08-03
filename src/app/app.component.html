@@ -1,8 +1,20 @@
 <h1>TODO LIST</h1>
-<div>
-  <input #inputbox 
-    placeholder = "todo" 
-    (keyup.enter)="update(inputbox.value); inputbox.value=''"/> 
-  <button (click)="update(inputbox.value); inputbox.value=''">submit</button>
-</div>
+<form #inputForm="ngForm" (ngSubmit)="onSubmit(inputForm)" novalidate>
+    <p>
+        할일:
+        <input name="text" placeholder="todo" ngModel required #text="ngModel" />
+    </p>
+    <div [hidden]="text.valid" class="alert alert-danger">
+        할일을 입력해주세요!
+    </div>
+    <p>
+        기한:
+        <input name="date" type="date" ngModel required #date="ngModel" />
+    </p>
+    <div [hidden]="date.valid" class="alert alert-danger">
+        기한을 입력해주세요!
+    </div>
+    <button type="submit" [disabled]="!inputForm.form.valid">submit</button>
+</form>
+
 <app-list></app-list>

@@ -1,3 +1,4 @@
+// 필요 없어진 파일
 import { TestBed, inject } from '@angular/core/testing';
 
 import { UpdateListService } from './update-list.service';

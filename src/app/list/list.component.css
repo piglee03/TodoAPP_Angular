@@ -1,3 +1,6 @@
+td .text{
+    width: 30em; 
+}
 .done{
     text-decoration: line-through;
 }
