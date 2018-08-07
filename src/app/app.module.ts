@@ -6,8 +6,8 @@ import { NgReduxModule, NgRedux } from '@angular-redux/store'; // using angular-
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 
-import { rootReducer, IAppState, INITIAL_STATE} from '../store';
-import { TodoActions } from './app.actions';
+import { rootReducer, IAppState, INITIAL_STATE } from './redux/store';
+import { TodoActions } from './redux/app.actions';
 
 
 @NgModule({
@@ -33,4 +33,4 @@ export class AppModule {
     );
   }
 
- }
+}

@@ -1,6 +1,7 @@
-td .text{
-    width: 30em; 
+.text {
+  width: 30em;
 }
-.done{
-    text-decoration: line-through;
+
+.done {
+  text-decoration: line-through;
 }

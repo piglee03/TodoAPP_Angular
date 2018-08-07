@@ -1,4 +1,4 @@
-export class Todo {
+export interface Todo {
     id: Number;
     text: String;
     date: String;
