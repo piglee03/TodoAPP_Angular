@@ -1,11 +1,11 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component } from '@angular/core';
 import { Todo } from '../redux/todo';
 import { NgRedux } from '@angular-redux/store';
 import { IAppState } from '../redux/store';
 import { TodoActions } from '../redux/app.actions';
-
 import { select } from '@angular-redux/store';
 import { Observable } from 'rxjs';
+
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -28,5 +28,3 @@ export class ListComponent {
     this.ngRedux.dispatch(this.actions.reverse(id));
   }
 }
-// observable selector pipe접근
-// redux @select
