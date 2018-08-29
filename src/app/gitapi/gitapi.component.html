@@ -1,0 +1,13 @@
+<h1>GitHub API</h1>
+
+<form #inputForm = "ngForm" (ngSubmit)="onSubmit(inputForm)">
+  <input name = "text" placeholder="github ID" required ngModel #text="ngModel" />
+  <button [disabled]="!text.valid" type ="submit">submit</button>
+</form>
+
+<div *ngIf='obtainedData'>
+  <p>login: {{obtainedData.login}}</p>
+  <p>name: {{obtainedData.name}}</p>
+  <p>location: {{obtainedData.location}}</p>
+  <p>url: {{obtainedData.url}}</p>
+</div>

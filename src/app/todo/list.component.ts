@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
 })
 
 export class ListComponent {
-  @select('todoList') readonly list: Observable<Todo[]>;
+  @select('todoList') readonly list$: Observable<Todo[]>;
 
   constructor(
     private ngRedux: NgRedux<IAppState>,
